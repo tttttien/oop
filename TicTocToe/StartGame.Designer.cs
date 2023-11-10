@@ -48,9 +48,10 @@ namespace TicTacToe
             // 
             this.flowLayoutPanel1.BackgroundImage = global::TicTocToe.Properties.Resources.background;
             this.flowLayoutPanel1.Controls.Add(this.button2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(536, 372);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(268, 193);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(142, 73);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(71, 38);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // button2
@@ -60,10 +61,10 @@ namespace TicTacToe
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Maroon;
-            this.button2.Location = new System.Drawing.Point(2, 2);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(1, 1);
+            this.button2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(141, 72);
+            this.button2.Size = new System.Drawing.Size(70, 27);
             this.button2.TabIndex = 3;
             this.button2.Text = "Ultimate";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -77,10 +78,11 @@ namespace TicTacToe
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Maroon;
-            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Location = new System.Drawing.Point(2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(2);
-            this.button1.Size = new System.Drawing.Size(140, 73);
+            this.button1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.button1.Size = new System.Drawing.Size(70, 28);
             this.button1.TabIndex = 0;
             this.button1.Text = "Basic";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -91,9 +93,10 @@ namespace TicTacToe
             // 
             this.flowLayoutPanel2.BackgroundImage = global::TicTocToe.Properties.Resources.background;
             this.flowLayoutPanel2.Controls.Add(this.button1);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(268, 369);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(134, 192);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(146, 77);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(73, 40);
             this.flowLayoutPanel2.TabIndex = 2;
             // 
             // label1
@@ -102,9 +105,10 @@ namespace TicTacToe
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label1.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label1.Image = ((System.Drawing.Image)(resources.GetObject("label1.Image")));
-            this.label1.Location = new System.Drawing.Point(3, 38);
+            this.label1.Location = new System.Drawing.Point(2, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 46);
+            this.label1.Size = new System.Drawing.Size(89, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "Player 1:";
             // 
@@ -114,9 +118,10 @@ namespace TicTacToe
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.label2.ForeColor = System.Drawing.Color.SaddleBrown;
             this.label2.Image = ((System.Drawing.Image)(resources.GetObject("label2.Image")));
-            this.label2.Location = new System.Drawing.Point(3, 120);
+            this.label2.Location = new System.Drawing.Point(2, 62);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 46);
+            this.label2.Size = new System.Drawing.Size(89, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Player 2:";
             // 
@@ -126,18 +131,21 @@ namespace TicTacToe
             this.p1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.p1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.p1.Location = new System.Drawing.Point(208, 34);
+            this.p1.Location = new System.Drawing.Point(104, 18);
+            this.p1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(474, 53);
+            this.p1.Size = new System.Drawing.Size(238, 30);
             this.p1.TabIndex = 2;
             // 
             // p2
             // 
             this.p2.BackColor = System.Drawing.Color.Snow;
+            this.p2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.p2.Location = new System.Drawing.Point(208, 120);
+            this.p2.Location = new System.Drawing.Point(104, 60);
+            this.p2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(474, 53);
+            this.p2.Size = new System.Drawing.Size(238, 30);
             this.p2.TabIndex = 3;
             // 
             // panel1
@@ -147,20 +155,22 @@ namespace TicTacToe
             this.panel1.Controls.Add(this.p1);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(124, 145);
+            this.panel1.Location = new System.Drawing.Point(62, 75);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(704, 197);
+            this.panel1.Size = new System.Drawing.Size(352, 102);
             this.panel1.TabIndex = 0;
             // 
             // StartGame
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(933, 489);
+            this.ClientSize = new System.Drawing.Size(466, 254);
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "StartGame";
             this.Text = "Form2";
             this.flowLayoutPanel1.ResumeLayout(false);

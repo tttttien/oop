@@ -56,3 +56,15 @@ C:\Users\ASUS\OneDrive - Trường ĐH CNTT - University of Information Technolo
 \\Mac\Home\oop\TicTocToe\obj\Debug\TicTacToe.Basic_Computer.resources
 \\Mac\Home\oop\TicTocToe\obj\Debug\TicTacToe.StartGame.resources
 \\Mac\Home\oop\TicTocToe\obj\Debug\TicTacToe.Ultimate.resources
+Y:\Desktop\oop\TicTocToe\bin\Debug\TicTocToe.exe.config
+Y:\Desktop\oop\TicTocToe\bin\Debug\TicTocToe.exe
+Y:\Desktop\oop\TicTocToe\bin\Debug\TicTocToe.pdb
+Y:\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.csproj.AssemblyReference.cache
+Y:\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.Basic_Computer.resources
+Y:\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.StartGame.resources
+Y:\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.Properties.Resources.resources
+Y:\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.Ultimate.resources
+Y:\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
+Y:\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+Y:\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.exe
+Y:\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.pdb
