@@ -108,9 +108,100 @@ namespace TicTacToe
         }
         //  Khi ma di -> Khi cos nguoiw thang -> Disable het button -> Ai thang, thif tinh ra score -> Xong gan cho x_count de hien thi ra man hinh
         // Handle click event for game buttons
+        public void Superstar(Button clickedButton, Button[,] buttons, Panel[,] panels, Panel panel)
+        {
+            string buttonName = clickedButton.Name;
+
+            // Extract the first digit and last digit from the button name
+            char firstDigit = buttonName[0];
+            char lastDigit = buttonName[buttonName.Length - 1];
+
+            // Combine first and last digits to get the panel character
+            string panelChar = firstDigit.ToString() + lastDigit.ToString();
+
+            // Determine the panel index based on the panel character
+            int panelIndex = 0;
+            switch (panelChar)
+            {
+                case "A1":
+                    panelIndex = 1;
+                    break;
+                case "A2":
+                    panelIndex = 2;
+                    break;
+                case "A3":
+                    panelIndex = 3;
+                    break;
+                case "B1":
+                    panelIndex = 4;
+                    break;
+                case "B2":
+                    panelIndex = 5;
+                    break;
+                case "B3":
+                    panelIndex = 6;
+                    break;
+                case "C1":
+                    panelIndex = 7;
+                    break;
+                case "C2":
+                    panelIndex = 8;
+                    break;
+                case "C3":
+                    panelIndex = 9;
+                    break;
+                default:
+                    // Handle invalid button names
+                    return;
+            }
+
+            // Enable the clicked panel and disable others
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    Panel currentPanel = panels[i, j];
+                    int currentPanelIndex = (i * 3) + (j + 1);
+
+                    foreach (Control control in currentPanel.Controls)
+                    {
+                        if (control is Button button)
+                        {
+                            if (currentPanelIndex == panelIndex && button.Text == "")
+                            {
+                                button.Enabled = true;
+                            }
+                            else
+                            {
+                                button.Enabled = false;
+                            }
+                        }
+                    }
+                    if (buttons[i, j] != null)
+                    {
+                        if (currentPanelIndex == panelIndex && buttons[i, j].Name == panels[i, j].Name)
+                        {
+                            for (int k = 0; k < 3; k++)
+                            {
+                                for (int l = 0; l < 3; l++)
+                                {
+                                    Panel current = panels[k, l];
+                                    foreach (Control control in current.Controls)
+                                    {
+                                        if (control is Button button && button.Text == "")
+                                        {
+                                            button.Enabled = true;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         public void CheckWinner (Button clickedButton, Button[,] buttons, Panel panel)
         {
-            
             Console.WriteLine("CheckForWinnerPanel returned true");
             if (ticTacToeGame.MakeMove(clickedButton))
             {
@@ -188,6 +279,7 @@ namespace TicTacToe
                                 }
                             }
                         }
+
                     };
                     if (ticTacToeGame.CheckForWinner(button))
                     {
@@ -204,20 +296,21 @@ namespace TicTacToe
                         }
                         MessageBox.Show($"Congratulations! {winner.Name} is the winner", "Winner");
                     }
-                    else if (ticTacToeGame.IsDraw())
-                    {
-                        draw_count.Text = (Int32.Parse(draw_count.Text) + 1).ToString();
-                        MessageBox.Show("Draw", "Draw");
-                    }
                 }
             }
-            
+            Superstar(clickedButton,button, panels, panel1);
         }
+
         
+
+
+
+
         private void button_click(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
             CheckWinner(clickedButton, button1, panel1);
+
         }
 
 
@@ -225,44 +318,51 @@ namespace TicTacToe
         {
             Button clickedButton = (Button)sender;
             CheckWinner(clickedButton, button2, panel2);
+
         }
         private void button_click2(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
             CheckWinner(clickedButton, button3, panel3);
+
         }
         private void button_click3(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
             CheckWinner(clickedButton, button4, panel4);
+
         }
         private void button_click4(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
             CheckWinner(clickedButton, button5, panel5);
+            
         }
         private void button_click5(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
             CheckWinner(clickedButton, button6, panel6);
+         
         }
         private void button_click6(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
             CheckWinner(clickedButton, button7, panel7);
+
         }
         private void button_click7(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
             CheckWinner(clickedButton, button8, panel8);
 
+
         }
         private void button_click8(object sender, EventArgs e)
         {
             Button clickedButton = (Button)sender;
             CheckWinner(clickedButton, button9, panel9);
+   
         }
-
         // La luc luot qua o, no se hien thi X hay O as
         // Handle mouse enter event for game buttons
         private void button_enter(object sender, EventArgs e)

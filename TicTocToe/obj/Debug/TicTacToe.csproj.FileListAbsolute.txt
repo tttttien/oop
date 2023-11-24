@@ -32,15 +32,3 @@
 \\Mac\Home\Desktop\TicTacToe\TicTocToe\obj\Debug\TicTocToe.exe
 \\Mac\Home\Desktop\TicTacToe\TicTocToe\obj\Debug\TicTocToe.pdb
 \\Mac\Home\Desktop\TicTacToe\TicTocToe\obj\Debug\TicTacToe.Super.resources
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\bin\Debug\TicTocToe.exe.config
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\bin\Debug\TicTocToe.exe
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\bin\Debug\TicTocToe.pdb
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\obj\Debug\TicTacToe.csproj.AssemblyReference.cache
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\obj\Debug\TicTacToe.Form1.resources
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\obj\Debug\TicTacToe.Form2.resources
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\obj\Debug\TicTocToe.Properties.Resources.resources
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\obj\Debug\TicTacToe.Super.resources
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\obj\Debug\TicTocToe.exe
-C:\Users\ttienkerbell\Desktop\Super and Basic (V2)\TicTacToe\TicTocToe\obj\Debug\TicTocToe.pdb
