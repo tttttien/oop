@@ -108,7 +108,7 @@ namespace TicTacToe
         }
         //  Khi ma di -> Khi cos nguoiw thang -> Disable het button -> Ai thang, thif tinh ra score -> Xong gan cho x_count de hien thi ra man hinh
         // Handle click event for game buttons
-        public void Superstar(Button clickedButton, Button[,] buttons, Panel[,] panels, Panel panel)
+        public void Superstar(Button clickedButton, Button[,] buttons, Panel[,] panels)
         {
             string buttonName = clickedButton.Name;
 
@@ -169,7 +169,12 @@ namespace TicTacToe
                         {
                             if (currentPanelIndex == panelIndex && button.Text == "")
                             {
-                                button.Enabled = true;
+                                    button.Enabled = true;
+                                if (buttons[i, j] != null && buttons[i, j].Name == panels[i, j].Name)
+                                {
+                                    EnableButtonNoText(panels);
+                                    return;
+                                }
                             }
                             else
                             {
@@ -177,26 +182,21 @@ namespace TicTacToe
                             }
                         }
                     }
-                    if (buttons[i, j] != null)
+                }
+            }
+        }
+     
+        public void EnableButtonNoText (Panel[,] panels)
+        {
+            foreach (Panel panel in panels)
+            {
+                foreach (Control control in panel.Controls)
+                {
+                    if (control is Button button && button.Text == "")
                     {
-                        if (currentPanelIndex == panelIndex && buttons[i, j].Name == panels[i, j].Name)
-                        {
-                            for (int k = 0; k < 3; k++)
-                            {
-                                for (int l = 0; l < 3; l++)
-                                {
-                                    Panel current = panels[k, l];
-                                    foreach (Control control in current.Controls)
-                                    {
-                                        if (control is Button button && button.Text == "")
-                                        {
-                                            button.Enabled = true;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                        button.Enabled = true;
                     }
+
                 }
             }
         }
@@ -298,7 +298,7 @@ namespace TicTacToe
                     }
                 }
             }
-            Superstar(clickedButton,button, panels, panel1);
+            Superstar(clickedButton,button, panels);
         }
 
         
