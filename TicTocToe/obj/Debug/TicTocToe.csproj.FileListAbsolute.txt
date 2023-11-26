@@ -1,0 +1,11 @@
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\obj\Debug\TicTocToe.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\obj\Debug\TicTocToe.Form1.resources
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\obj\Debug\TicTocToe.Form2.resources
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\obj\Debug\TicTocToe.Properties.Resources.resources
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\obj\Debug\TicTocToe.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\obj\Debug\TicTocToe.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\bin\Debug\TicTocToe.exe.config
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\bin\Debug\TicTocToe.exe
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\bin\Debug\TicTocToe.pdb
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\obj\Debug\TicTocToe.exe
+\\Mac\Home\Desktop\Lab (2023-2024\TicTocToe\TicTocToe\obj\Debug\TicTocToe.pdb
