@@ -68,3 +68,15 @@ Y:\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
 Y:\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
 Y:\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.exe
 Y:\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.pdb
+\\Mac\Home\Desktop\oop\TicTocToe\bin\Debug\TicTocToe.exe.config
+\\Mac\Home\Desktop\oop\TicTocToe\bin\Debug\TicTocToe.exe
+\\Mac\Home\Desktop\oop\TicTocToe\bin\Debug\TicTocToe.pdb
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.csproj.AssemblyReference.cache
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.Basic_Computer.resources
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.StartGame.resources
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.Properties.Resources.resources
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.Ultimate.resources
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.csproj.GenerateResource.cache
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.exe
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.pdb
