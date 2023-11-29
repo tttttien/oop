@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace TicTacToe
 {
-    public partial class Basic_Computer : Form, TicTacToeGame
+    public partial class Basic_Computer : Form
     {
         // Lay ben tictacToeGame
         // Reference to the TicTacToeGame class
