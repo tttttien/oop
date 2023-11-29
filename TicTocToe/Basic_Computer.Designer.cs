@@ -50,8 +50,8 @@ namespace TicTacToe
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.resetWinGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setPlayerDefaultToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button1 = new System.Windows.Forms.Button();
@@ -319,23 +319,23 @@ namespace TicTacToe
             // resetWinGameToolStripMenuItem
             // 
             this.resetWinGameToolStripMenuItem.Name = "resetWinGameToolStripMenuItem";
-            this.resetWinGameToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.resetWinGameToolStripMenuItem.Size = new System.Drawing.Size(339, 44);
             this.resetWinGameToolStripMenuItem.Text = "New game";
             this.resetWinGameToolStripMenuItem.Click += new System.EventHandler(this.resetWinGameToolStripMenuItem_Click);
-            // 
-            // exitToolStripMenuItem
-            // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // setPlayerDefaultToolStripMenuItem
             // 
             this.setPlayerDefaultToolStripMenuItem.Name = "setPlayerDefaultToolStripMenuItem";
-            this.setPlayerDefaultToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.setPlayerDefaultToolStripMenuItem.Size = new System.Drawing.Size(339, 44);
             this.setPlayerDefaultToolStripMenuItem.Text = "Set Player Default";
             this.setPlayerDefaultToolStripMenuItem.Click += new System.EventHandler(this.setPlayerDefaultToolStripMenuItem_Click);
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(339, 44);
+            this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -348,7 +348,7 @@ namespace TicTacToe
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(214, 44);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -368,6 +368,7 @@ namespace TicTacToe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(680, 1031);
             this.Controls.Add(this.button1);
@@ -378,7 +379,7 @@ namespace TicTacToe
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(706, 1102);
-            this.MinimumSize = new System.Drawing.Size(706, 821);
+            this.MinimumSize = new System.Drawing.Size(706, 1102);
             this.Name = "Basic_Computer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tic Tac Toe";

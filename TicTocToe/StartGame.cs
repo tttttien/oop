@@ -22,22 +22,26 @@ namespace TicTacToe
         //If it is, it calls the SetPlayerNames method on the Form1 instance and passes the text values of the p1 and p2 controls as arguments.
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
             Basic_Computer basic_computer = new Basic_Computer();
             basic_computer.Owner = this;
-            this.Hide();
+            
             basic_computer.SetPlayerNames(p1.Text, p2.Text);
             basic_computer.ShowDialog();
+            basic_computer = null;
+            this.Show();
             // Không cần gọi this.Hide() ở đây
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Ultimate ultimate = new Ultimate ();
             ultimate.Owner = this;
-            this.Hide();
+            
             ultimate.SetPlayerNames(p1.Text, p2.Text);
             ultimate.ShowDialog();
+            this.Show();
             // Không cần gọi this.Hide() ở đây
         }
 

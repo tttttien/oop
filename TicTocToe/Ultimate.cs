@@ -254,6 +254,17 @@ namespace TicTacToe
             ultimatestate.ResetGame(panels, button);
         }
 
+        private void newGameToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            o_count.Text = "0";
+            x_count.Text = "0";
+            draw_count.Text = "0";
+
+            ticTacToeGame.Player1.Score = 0;
+            ticTacToeGame.Player2.Score = 0;
+            ultimatestate.ResetGame(panels, button);
+        }
+
 
 
 

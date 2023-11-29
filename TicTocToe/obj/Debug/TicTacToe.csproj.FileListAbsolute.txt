@@ -80,3 +80,6 @@ Y:\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.pdb
 \\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.csproj.CoreCompileInputs.cache
 \\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.exe
 \\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTocToe.pdb
+\\Mac\Home\Desktop\oop\TicTocToe\bin\Debug\dje\TicTocToe.resources.dll
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\TicTacToe.Ultimate.dje.resources
+\\Mac\Home\Desktop\oop\TicTocToe\obj\Debug\dje\TicTocToe.resources.dll

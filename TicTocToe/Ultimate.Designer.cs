@@ -32,7 +32,6 @@ namespace TicTacToe
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ultimate));
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.resetWinGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -153,37 +152,27 @@ namespace TicTacToe
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(214, 44);
-            this.aboutToolStripMenuItem.Text = "About";
+            resources.ApplyResources(this.aboutToolStripMenuItem, "aboutToolStripMenuItem");
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(317, 44);
-            this.exitToolStripMenuItem.Text = "Exit";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
-            // 
-            // resetWinGameToolStripMenuItem
-            // 
-            this.resetWinGameToolStripMenuItem.Name = "resetWinGameToolStripMenuItem";
-            this.resetWinGameToolStripMenuItem.Size = new System.Drawing.Size(317, 44);
-            this.resetWinGameToolStripMenuItem.Text = "Reset win game";
             // 
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(317, 44);
-            this.newGameToolStripMenuItem.Text = "New game";
+            resources.ApplyResources(this.newGameToolStripMenuItem, "newGameToolStripMenuItem");
+            this.newGameToolStripMenuItem.Click += new System.EventHandler(this.newGameToolStripMenuItem_Click_1);
             // 
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.newGameToolStripMenuItem,
-            this.resetWinGameToolStripMenuItem,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 44);
-            this.fileToolStripMenuItem.Text = "File";
+            resources.ApplyResources(this.fileToolStripMenuItem, "fileToolStripMenuItem");
             // 
             // menuStrip1
             // 
@@ -191,116 +180,76 @@ namespace TicTacToe
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            resources.ApplyResources(this.menuStrip1, "menuStrip1");
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1268, 40);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // helpToolStripMenuItem
             // 
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(85, 44);
-            this.helpToolStripMenuItem.Text = "Help";
+            resources.ApplyResources(this.helpToolStripMenuItem, "helpToolStripMenuItem");
             // 
             // A11
             // 
-            this.A11.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A11.Location = new System.Drawing.Point(0, 0);
-            this.A11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A11, "A11");
             this.A11.Name = "A11";
-            this.A11.Size = new System.Drawing.Size(112, 113);
-            this.A11.TabIndex = 0;
             this.A11.UseVisualStyleBackColor = true;
             this.A11.Click += new System.EventHandler(this.button_click);
             // 
             // B11
             // 
-            this.B11.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B11.Location = new System.Drawing.Point(0, 119);
-            this.B11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B11, "B11");
             this.B11.Name = "B11";
-            this.B11.Size = new System.Drawing.Size(112, 113);
-            this.B11.TabIndex = 3;
             this.B11.UseVisualStyleBackColor = true;
             this.B11.Click += new System.EventHandler(this.button_click);
             // 
             // A13
             // 
-            this.A13.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A13.Location = new System.Drawing.Point(238, 0);
-            this.A13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A13, "A13");
             this.A13.Name = "A13";
-            this.A13.Size = new System.Drawing.Size(112, 113);
-            this.A13.TabIndex = 2;
             this.A13.UseVisualStyleBackColor = true;
             this.A13.Click += new System.EventHandler(this.button_click);
             // 
             // C12
             // 
-            this.C12.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C12.Location = new System.Drawing.Point(120, 238);
-            this.C12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C12, "C12");
             this.C12.Name = "C12";
-            this.C12.Size = new System.Drawing.Size(112, 113);
-            this.C12.TabIndex = 8;
             this.C12.UseVisualStyleBackColor = true;
             this.C12.Click += new System.EventHandler(this.button_click);
             // 
             // C13
             // 
-            this.C13.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C13.Location = new System.Drawing.Point(238, 238);
-            this.C13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C13, "C13");
             this.C13.Name = "C13";
-            this.C13.Size = new System.Drawing.Size(112, 113);
-            this.C13.TabIndex = 7;
             this.C13.UseVisualStyleBackColor = true;
             this.C13.Click += new System.EventHandler(this.button_click);
             // 
             // C11
             // 
-            this.C11.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C11.Location = new System.Drawing.Point(0, 238);
-            this.C11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C11, "C11");
             this.C11.Name = "C11";
-            this.C11.Size = new System.Drawing.Size(112, 113);
-            this.C11.TabIndex = 6;
             this.C11.UseVisualStyleBackColor = true;
             this.C11.Click += new System.EventHandler(this.button_click);
             // 
             // B13
             // 
-            this.B13.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B13.Location = new System.Drawing.Point(238, 119);
-            this.B13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B13, "B13");
             this.B13.Name = "B13";
-            this.B13.Size = new System.Drawing.Size(112, 113);
-            this.B13.TabIndex = 5;
             this.B13.UseVisualStyleBackColor = true;
             this.B13.Click += new System.EventHandler(this.button_click);
             // 
             // B12
             // 
-            this.B12.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B12.Location = new System.Drawing.Point(120, 119);
-            this.B12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B12, "B12");
             this.B12.Name = "B12";
-            this.B12.Size = new System.Drawing.Size(112, 113);
-            this.B12.TabIndex = 4;
             this.B12.UseVisualStyleBackColor = true;
             this.B12.Click += new System.EventHandler(this.button_click);
             // 
             // A12
             // 
-            this.A12.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A12.Location = new System.Drawing.Point(120, 0);
-            this.A12.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A12, "A12");
             this.A12.Name = "A12";
-            this.A12.Size = new System.Drawing.Size(112, 113);
-            this.A12.TabIndex = 1;
             this.A12.UseVisualStyleBackColor = true;
             this.A12.Click += new System.EventHandler(this.button_click);
             // 
@@ -315,12 +264,8 @@ namespace TicTacToe
             this.panel1.Controls.Add(this.B11);
             this.panel1.Controls.Add(this.A13);
             this.panel1.Controls.Add(this.A12);
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 105F);
-            this.panel1.Location = new System.Drawing.Point(4, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(356, 356);
-            this.panel1.TabIndex = 3;
             // 
             // panel2
             // 
@@ -333,108 +278,69 @@ namespace TicTacToe
             this.panel2.Controls.Add(this.A23);
             this.panel2.Controls.Add(this.A22);
             this.panel2.Controls.Add(this.A21);
-            this.panel2.Location = new System.Drawing.Point(368, 2);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(356, 356);
-            this.panel2.TabIndex = 9;
             // 
             // C22
             // 
-            this.C22.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C22.Location = new System.Drawing.Point(120, 238);
-            this.C22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C22, "C22");
             this.C22.Name = "C22";
-            this.C22.Size = new System.Drawing.Size(112, 113);
-            this.C22.TabIndex = 8;
             this.C22.UseVisualStyleBackColor = true;
             this.C22.Click += new System.EventHandler(this.button_click1);
             // 
             // C23
             // 
-            this.C23.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C23.Location = new System.Drawing.Point(238, 238);
-            this.C23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C23, "C23");
             this.C23.Name = "C23";
-            this.C23.Size = new System.Drawing.Size(112, 113);
-            this.C23.TabIndex = 7;
             this.C23.UseVisualStyleBackColor = true;
             this.C23.Click += new System.EventHandler(this.button_click1);
             // 
             // C21
             // 
-            this.C21.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C21.Location = new System.Drawing.Point(0, 238);
-            this.C21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C21, "C21");
             this.C21.Name = "C21";
-            this.C21.Size = new System.Drawing.Size(112, 113);
-            this.C21.TabIndex = 6;
             this.C21.UseVisualStyleBackColor = true;
             this.C21.Click += new System.EventHandler(this.button_click1);
             // 
             // B23
             // 
-            this.B23.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B23.Location = new System.Drawing.Point(238, 119);
-            this.B23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B23, "B23");
             this.B23.Name = "B23";
-            this.B23.Size = new System.Drawing.Size(112, 113);
-            this.B23.TabIndex = 5;
             this.B23.UseVisualStyleBackColor = true;
             this.B23.Click += new System.EventHandler(this.button_click1);
             // 
             // B22
             // 
-            this.B22.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B22.Location = new System.Drawing.Point(120, 119);
-            this.B22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B22, "B22");
             this.B22.Name = "B22";
-            this.B22.Size = new System.Drawing.Size(112, 113);
-            this.B22.TabIndex = 4;
             this.B22.UseVisualStyleBackColor = true;
             this.B22.Click += new System.EventHandler(this.button_click1);
             // 
             // B21
             // 
-            this.B21.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B21.Location = new System.Drawing.Point(0, 119);
-            this.B21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B21, "B21");
             this.B21.Name = "B21";
-            this.B21.Size = new System.Drawing.Size(112, 113);
-            this.B21.TabIndex = 3;
             this.B21.UseVisualStyleBackColor = true;
             this.B21.Click += new System.EventHandler(this.button_click1);
             // 
             // A23
             // 
-            this.A23.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A23.Location = new System.Drawing.Point(238, 0);
-            this.A23.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A23, "A23");
             this.A23.Name = "A23";
-            this.A23.Size = new System.Drawing.Size(112, 113);
-            this.A23.TabIndex = 2;
             this.A23.UseVisualStyleBackColor = true;
             this.A23.Click += new System.EventHandler(this.button_click1);
             // 
             // A22
             // 
-            this.A22.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A22.Location = new System.Drawing.Point(120, 0);
-            this.A22.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A22, "A22");
             this.A22.Name = "A22";
-            this.A22.Size = new System.Drawing.Size(112, 113);
-            this.A22.TabIndex = 1;
             this.A22.UseVisualStyleBackColor = true;
             this.A22.Click += new System.EventHandler(this.button_click1);
             // 
             // A21
             // 
-            this.A21.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A21.Location = new System.Drawing.Point(0, 0);
-            this.A21.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A21, "A21");
             this.A21.Name = "A21";
-            this.A21.Size = new System.Drawing.Size(112, 113);
-            this.A21.TabIndex = 0;
             this.A21.UseVisualStyleBackColor = true;
             this.A21.Click += new System.EventHandler(this.button_click1);
             // 
@@ -449,108 +355,69 @@ namespace TicTacToe
             this.panel3.Controls.Add(this.A33);
             this.panel3.Controls.Add(this.A32);
             this.panel3.Controls.Add(this.A31);
-            this.panel3.Location = new System.Drawing.Point(728, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(356, 356);
-            this.panel3.TabIndex = 10;
             // 
             // C32
             // 
-            this.C32.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C32.Location = new System.Drawing.Point(120, 238);
-            this.C32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C32, "C32");
             this.C32.Name = "C32";
-            this.C32.Size = new System.Drawing.Size(112, 113);
-            this.C32.TabIndex = 8;
             this.C32.UseVisualStyleBackColor = true;
             this.C32.Click += new System.EventHandler(this.button_click2);
             // 
             // C33
             // 
-            this.C33.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C33.Location = new System.Drawing.Point(238, 238);
-            this.C33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C33, "C33");
             this.C33.Name = "C33";
-            this.C33.Size = new System.Drawing.Size(112, 113);
-            this.C33.TabIndex = 7;
             this.C33.UseVisualStyleBackColor = true;
             this.C33.Click += new System.EventHandler(this.button_click2);
             // 
             // C31
             // 
-            this.C31.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C31.Location = new System.Drawing.Point(0, 238);
-            this.C31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C31, "C31");
             this.C31.Name = "C31";
-            this.C31.Size = new System.Drawing.Size(112, 113);
-            this.C31.TabIndex = 6;
             this.C31.UseVisualStyleBackColor = true;
             this.C31.Click += new System.EventHandler(this.button_click2);
             // 
             // B33
             // 
-            this.B33.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B33.Location = new System.Drawing.Point(238, 119);
-            this.B33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B33, "B33");
             this.B33.Name = "B33";
-            this.B33.Size = new System.Drawing.Size(112, 113);
-            this.B33.TabIndex = 5;
             this.B33.UseVisualStyleBackColor = true;
             this.B33.Click += new System.EventHandler(this.button_click2);
             // 
             // B32
             // 
-            this.B32.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B32.Location = new System.Drawing.Point(120, 119);
-            this.B32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B32, "B32");
             this.B32.Name = "B32";
-            this.B32.Size = new System.Drawing.Size(112, 113);
-            this.B32.TabIndex = 4;
             this.B32.UseVisualStyleBackColor = true;
             this.B32.Click += new System.EventHandler(this.button_click2);
             // 
             // B31
             // 
-            this.B31.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B31.Location = new System.Drawing.Point(0, 119);
-            this.B31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B31, "B31");
             this.B31.Name = "B31";
-            this.B31.Size = new System.Drawing.Size(112, 113);
-            this.B31.TabIndex = 3;
             this.B31.UseVisualStyleBackColor = true;
             this.B31.Click += new System.EventHandler(this.button_click2);
             // 
             // A33
             // 
-            this.A33.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A33.Location = new System.Drawing.Point(238, 0);
-            this.A33.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A33, "A33");
             this.A33.Name = "A33";
-            this.A33.Size = new System.Drawing.Size(112, 113);
-            this.A33.TabIndex = 2;
             this.A33.UseVisualStyleBackColor = true;
             this.A33.Click += new System.EventHandler(this.button_click2);
             // 
             // A32
             // 
-            this.A32.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A32.Location = new System.Drawing.Point(120, 0);
-            this.A32.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A32, "A32");
             this.A32.Name = "A32";
-            this.A32.Size = new System.Drawing.Size(112, 113);
-            this.A32.TabIndex = 1;
             this.A32.UseVisualStyleBackColor = true;
             this.A32.Click += new System.EventHandler(this.button_click2);
             // 
             // A31
             // 
-            this.A31.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A31.Location = new System.Drawing.Point(0, 0);
-            this.A31.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A31, "A31");
             this.A31.Name = "A31";
-            this.A31.Size = new System.Drawing.Size(112, 113);
-            this.A31.TabIndex = 0;
             this.A31.UseVisualStyleBackColor = true;
             this.A31.Click += new System.EventHandler(this.button_click2);
             // 
@@ -565,108 +432,69 @@ namespace TicTacToe
             this.panel4.Controls.Add(this.A43);
             this.panel4.Controls.Add(this.A42);
             this.panel4.Controls.Add(this.A41);
-            this.panel4.Location = new System.Drawing.Point(4, 363);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.panel4, "panel4");
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(356, 356);
-            this.panel4.TabIndex = 11;
             // 
             // C42
             // 
-            this.C42.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C42.Location = new System.Drawing.Point(120, 238);
-            this.C42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C42, "C42");
             this.C42.Name = "C42";
-            this.C42.Size = new System.Drawing.Size(112, 113);
-            this.C42.TabIndex = 8;
             this.C42.UseVisualStyleBackColor = true;
             this.C42.Click += new System.EventHandler(this.button_click3);
             // 
             // C43
             // 
-            this.C43.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C43.Location = new System.Drawing.Point(238, 238);
-            this.C43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C43, "C43");
             this.C43.Name = "C43";
-            this.C43.Size = new System.Drawing.Size(112, 113);
-            this.C43.TabIndex = 7;
             this.C43.UseVisualStyleBackColor = true;
             this.C43.Click += new System.EventHandler(this.button_click3);
             // 
             // C41
             // 
-            this.C41.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C41.Location = new System.Drawing.Point(0, 238);
-            this.C41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C41, "C41");
             this.C41.Name = "C41";
-            this.C41.Size = new System.Drawing.Size(112, 113);
-            this.C41.TabIndex = 6;
             this.C41.UseVisualStyleBackColor = true;
             this.C41.Click += new System.EventHandler(this.button_click3);
             // 
             // B43
             // 
-            this.B43.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B43.Location = new System.Drawing.Point(238, 119);
-            this.B43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B43, "B43");
             this.B43.Name = "B43";
-            this.B43.Size = new System.Drawing.Size(112, 113);
-            this.B43.TabIndex = 5;
             this.B43.UseVisualStyleBackColor = true;
             this.B43.Click += new System.EventHandler(this.button_click3);
             // 
             // B42
             // 
-            this.B42.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B42.Location = new System.Drawing.Point(120, 119);
-            this.B42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B42, "B42");
             this.B42.Name = "B42";
-            this.B42.Size = new System.Drawing.Size(112, 113);
-            this.B42.TabIndex = 4;
             this.B42.UseVisualStyleBackColor = true;
             this.B42.Click += new System.EventHandler(this.button_click3);
             // 
             // B41
             // 
-            this.B41.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B41.Location = new System.Drawing.Point(0, 119);
-            this.B41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B41, "B41");
             this.B41.Name = "B41";
-            this.B41.Size = new System.Drawing.Size(112, 113);
-            this.B41.TabIndex = 3;
             this.B41.UseVisualStyleBackColor = true;
             this.B41.Click += new System.EventHandler(this.button_click3);
             // 
             // A43
             // 
-            this.A43.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A43.Location = new System.Drawing.Point(238, 0);
-            this.A43.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A43, "A43");
             this.A43.Name = "A43";
-            this.A43.Size = new System.Drawing.Size(112, 113);
-            this.A43.TabIndex = 2;
             this.A43.UseVisualStyleBackColor = true;
             this.A43.Click += new System.EventHandler(this.button_click3);
             // 
             // A42
             // 
-            this.A42.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A42.Location = new System.Drawing.Point(120, 0);
-            this.A42.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A42, "A42");
             this.A42.Name = "A42";
-            this.A42.Size = new System.Drawing.Size(112, 113);
-            this.A42.TabIndex = 1;
             this.A42.UseVisualStyleBackColor = true;
             this.A42.Click += new System.EventHandler(this.button_click3);
             // 
             // A41
             // 
-            this.A41.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A41.Location = new System.Drawing.Point(0, 0);
-            this.A41.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A41, "A41");
             this.A41.Name = "A41";
-            this.A41.Size = new System.Drawing.Size(112, 113);
-            this.A41.TabIndex = 0;
             this.A41.UseVisualStyleBackColor = true;
             this.A41.Click += new System.EventHandler(this.button_click3);
             // 
@@ -681,108 +509,69 @@ namespace TicTacToe
             this.panel5.Controls.Add(this.A53);
             this.panel5.Controls.Add(this.A52);
             this.panel5.Controls.Add(this.A51);
-            this.panel5.Location = new System.Drawing.Point(368, 365);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.panel5, "panel5");
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(356, 356);
-            this.panel5.TabIndex = 11;
             // 
             // C52
             // 
-            this.C52.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C52.Location = new System.Drawing.Point(120, 238);
-            this.C52.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C52, "C52");
             this.C52.Name = "C52";
-            this.C52.Size = new System.Drawing.Size(112, 113);
-            this.C52.TabIndex = 8;
             this.C52.UseVisualStyleBackColor = true;
             this.C52.Click += new System.EventHandler(this.button_click4);
             // 
             // C53
             // 
-            this.C53.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C53.Location = new System.Drawing.Point(238, 238);
-            this.C53.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C53, "C53");
             this.C53.Name = "C53";
-            this.C53.Size = new System.Drawing.Size(112, 113);
-            this.C53.TabIndex = 7;
             this.C53.UseVisualStyleBackColor = true;
             this.C53.Click += new System.EventHandler(this.button_click4);
             // 
             // C51
             // 
-            this.C51.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C51.Location = new System.Drawing.Point(0, 238);
-            this.C51.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C51, "C51");
             this.C51.Name = "C51";
-            this.C51.Size = new System.Drawing.Size(112, 113);
-            this.C51.TabIndex = 6;
             this.C51.UseVisualStyleBackColor = true;
             this.C51.Click += new System.EventHandler(this.button_click4);
             // 
             // B53
             // 
-            this.B53.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B53.Location = new System.Drawing.Point(238, 119);
-            this.B53.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B53, "B53");
             this.B53.Name = "B53";
-            this.B53.Size = new System.Drawing.Size(112, 113);
-            this.B53.TabIndex = 5;
             this.B53.UseVisualStyleBackColor = true;
             this.B53.Click += new System.EventHandler(this.button_click4);
             // 
             // B52
             // 
-            this.B52.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B52.Location = new System.Drawing.Point(120, 119);
-            this.B52.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B52, "B52");
             this.B52.Name = "B52";
-            this.B52.Size = new System.Drawing.Size(112, 113);
-            this.B52.TabIndex = 4;
             this.B52.UseVisualStyleBackColor = true;
             this.B52.Click += new System.EventHandler(this.button_click4);
             // 
             // B51
             // 
-            this.B51.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B51.Location = new System.Drawing.Point(0, 119);
-            this.B51.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B51, "B51");
             this.B51.Name = "B51";
-            this.B51.Size = new System.Drawing.Size(112, 113);
-            this.B51.TabIndex = 3;
             this.B51.UseVisualStyleBackColor = true;
             this.B51.Click += new System.EventHandler(this.button_click4);
             // 
             // A53
             // 
-            this.A53.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A53.Location = new System.Drawing.Point(238, 0);
-            this.A53.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A53, "A53");
             this.A53.Name = "A53";
-            this.A53.Size = new System.Drawing.Size(112, 113);
-            this.A53.TabIndex = 2;
             this.A53.UseVisualStyleBackColor = true;
             this.A53.Click += new System.EventHandler(this.button_click4);
             // 
             // A52
             // 
-            this.A52.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A52.Location = new System.Drawing.Point(120, 0);
-            this.A52.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A52, "A52");
             this.A52.Name = "A52";
-            this.A52.Size = new System.Drawing.Size(112, 113);
-            this.A52.TabIndex = 1;
             this.A52.UseVisualStyleBackColor = true;
             this.A52.Click += new System.EventHandler(this.button_click4);
             // 
             // A51
             // 
-            this.A51.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A51.Location = new System.Drawing.Point(0, 0);
-            this.A51.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A51, "A51");
             this.A51.Name = "A51";
-            this.A51.Size = new System.Drawing.Size(112, 113);
-            this.A51.TabIndex = 0;
             this.A51.UseVisualStyleBackColor = true;
             this.A51.Click += new System.EventHandler(this.button_click4);
             // 
@@ -797,108 +586,69 @@ namespace TicTacToe
             this.panel6.Controls.Add(this.A63);
             this.panel6.Controls.Add(this.A62);
             this.panel6.Controls.Add(this.A61);
-            this.panel6.Location = new System.Drawing.Point(728, 365);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.panel6, "panel6");
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(356, 356);
-            this.panel6.TabIndex = 12;
             // 
             // C62
             // 
-            this.C62.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C62.Location = new System.Drawing.Point(120, 238);
-            this.C62.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C62, "C62");
             this.C62.Name = "C62";
-            this.C62.Size = new System.Drawing.Size(112, 113);
-            this.C62.TabIndex = 8;
             this.C62.UseVisualStyleBackColor = true;
             this.C62.Click += new System.EventHandler(this.button_click5);
             // 
             // C63
             // 
-            this.C63.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C63.Location = new System.Drawing.Point(238, 238);
-            this.C63.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C63, "C63");
             this.C63.Name = "C63";
-            this.C63.Size = new System.Drawing.Size(112, 113);
-            this.C63.TabIndex = 7;
             this.C63.UseVisualStyleBackColor = true;
             this.C63.Click += new System.EventHandler(this.button_click5);
             // 
             // C61
             // 
-            this.C61.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C61.Location = new System.Drawing.Point(0, 238);
-            this.C61.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C61, "C61");
             this.C61.Name = "C61";
-            this.C61.Size = new System.Drawing.Size(112, 113);
-            this.C61.TabIndex = 6;
             this.C61.UseVisualStyleBackColor = true;
             this.C61.Click += new System.EventHandler(this.button_click5);
             // 
             // B63
             // 
-            this.B63.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B63.Location = new System.Drawing.Point(238, 119);
-            this.B63.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B63, "B63");
             this.B63.Name = "B63";
-            this.B63.Size = new System.Drawing.Size(112, 113);
-            this.B63.TabIndex = 5;
             this.B63.UseVisualStyleBackColor = true;
             this.B63.Click += new System.EventHandler(this.button_click5);
             // 
             // B62
             // 
-            this.B62.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B62.Location = new System.Drawing.Point(120, 119);
-            this.B62.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B62, "B62");
             this.B62.Name = "B62";
-            this.B62.Size = new System.Drawing.Size(112, 113);
-            this.B62.TabIndex = 4;
             this.B62.UseVisualStyleBackColor = true;
             this.B62.Click += new System.EventHandler(this.button_click5);
             // 
             // B61
             // 
-            this.B61.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B61.Location = new System.Drawing.Point(0, 119);
-            this.B61.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B61, "B61");
             this.B61.Name = "B61";
-            this.B61.Size = new System.Drawing.Size(112, 113);
-            this.B61.TabIndex = 3;
             this.B61.UseVisualStyleBackColor = true;
             this.B61.Click += new System.EventHandler(this.button_click5);
             // 
             // A63
             // 
-            this.A63.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A63.Location = new System.Drawing.Point(238, 0);
-            this.A63.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A63, "A63");
             this.A63.Name = "A63";
-            this.A63.Size = new System.Drawing.Size(112, 113);
-            this.A63.TabIndex = 2;
             this.A63.UseVisualStyleBackColor = true;
             this.A63.Click += new System.EventHandler(this.button_click5);
             // 
             // A62
             // 
-            this.A62.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A62.Location = new System.Drawing.Point(120, 0);
-            this.A62.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A62, "A62");
             this.A62.Name = "A62";
-            this.A62.Size = new System.Drawing.Size(112, 113);
-            this.A62.TabIndex = 1;
             this.A62.UseVisualStyleBackColor = true;
             this.A62.Click += new System.EventHandler(this.button_click5);
             // 
             // A61
             // 
-            this.A61.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A61.Location = new System.Drawing.Point(0, 0);
-            this.A61.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A61, "A61");
             this.A61.Name = "A61";
-            this.A61.Size = new System.Drawing.Size(112, 113);
-            this.A61.TabIndex = 0;
             this.A61.UseVisualStyleBackColor = true;
             this.A61.Click += new System.EventHandler(this.button_click5);
             // 
@@ -913,108 +663,69 @@ namespace TicTacToe
             this.panel7.Controls.Add(this.A73);
             this.panel7.Controls.Add(this.A72);
             this.panel7.Controls.Add(this.A71);
-            this.panel7.Location = new System.Drawing.Point(4, 729);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.panel7, "panel7");
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(356, 356);
-            this.panel7.TabIndex = 13;
             // 
             // C72
             // 
-            this.C72.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C72.Location = new System.Drawing.Point(120, 238);
-            this.C72.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C72, "C72");
             this.C72.Name = "C72";
-            this.C72.Size = new System.Drawing.Size(112, 113);
-            this.C72.TabIndex = 8;
             this.C72.UseVisualStyleBackColor = true;
             this.C72.Click += new System.EventHandler(this.button_click6);
             // 
             // C73
             // 
-            this.C73.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C73.Location = new System.Drawing.Point(238, 238);
-            this.C73.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C73, "C73");
             this.C73.Name = "C73";
-            this.C73.Size = new System.Drawing.Size(112, 113);
-            this.C73.TabIndex = 7;
             this.C73.UseVisualStyleBackColor = true;
             this.C73.Click += new System.EventHandler(this.button_click6);
             // 
             // C71
             // 
-            this.C71.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C71.Location = new System.Drawing.Point(0, 238);
-            this.C71.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C71, "C71");
             this.C71.Name = "C71";
-            this.C71.Size = new System.Drawing.Size(112, 113);
-            this.C71.TabIndex = 6;
             this.C71.UseVisualStyleBackColor = true;
             this.C71.Click += new System.EventHandler(this.button_click6);
             // 
             // B73
             // 
-            this.B73.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B73.Location = new System.Drawing.Point(238, 119);
-            this.B73.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B73, "B73");
             this.B73.Name = "B73";
-            this.B73.Size = new System.Drawing.Size(112, 113);
-            this.B73.TabIndex = 5;
             this.B73.UseVisualStyleBackColor = true;
             this.B73.Click += new System.EventHandler(this.button_click6);
             // 
             // B72
             // 
-            this.B72.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B72.Location = new System.Drawing.Point(120, 119);
-            this.B72.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B72, "B72");
             this.B72.Name = "B72";
-            this.B72.Size = new System.Drawing.Size(112, 113);
-            this.B72.TabIndex = 4;
             this.B72.UseVisualStyleBackColor = true;
             this.B72.Click += new System.EventHandler(this.button_click6);
             // 
             // B71
             // 
-            this.B71.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B71.Location = new System.Drawing.Point(0, 119);
-            this.B71.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B71, "B71");
             this.B71.Name = "B71";
-            this.B71.Size = new System.Drawing.Size(112, 113);
-            this.B71.TabIndex = 3;
             this.B71.UseVisualStyleBackColor = true;
             this.B71.Click += new System.EventHandler(this.button_click6);
             // 
             // A73
             // 
-            this.A73.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A73.Location = new System.Drawing.Point(238, 0);
-            this.A73.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A73, "A73");
             this.A73.Name = "A73";
-            this.A73.Size = new System.Drawing.Size(112, 113);
-            this.A73.TabIndex = 2;
             this.A73.UseVisualStyleBackColor = true;
             this.A73.Click += new System.EventHandler(this.button_click6);
             // 
             // A72
             // 
-            this.A72.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A72.Location = new System.Drawing.Point(120, 0);
-            this.A72.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A72, "A72");
             this.A72.Name = "A72";
-            this.A72.Size = new System.Drawing.Size(112, 113);
-            this.A72.TabIndex = 1;
             this.A72.UseVisualStyleBackColor = true;
             this.A72.Click += new System.EventHandler(this.button_click6);
             // 
             // A71
             // 
-            this.A71.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A71.Location = new System.Drawing.Point(0, 0);
-            this.A71.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A71, "A71");
             this.A71.Name = "A71";
-            this.A71.Size = new System.Drawing.Size(112, 113);
-            this.A71.TabIndex = 0;
             this.A71.UseVisualStyleBackColor = true;
             this.A71.Click += new System.EventHandler(this.button_click6);
             // 
@@ -1029,108 +740,69 @@ namespace TicTacToe
             this.panel8.Controls.Add(this.A83);
             this.panel8.Controls.Add(this.A82);
             this.panel8.Controls.Add(this.A81);
-            this.panel8.Location = new System.Drawing.Point(368, 729);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.panel8, "panel8");
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(356, 356);
-            this.panel8.TabIndex = 13;
             // 
             // C82
             // 
-            this.C82.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C82.Location = new System.Drawing.Point(120, 238);
-            this.C82.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C82, "C82");
             this.C82.Name = "C82";
-            this.C82.Size = new System.Drawing.Size(112, 113);
-            this.C82.TabIndex = 8;
             this.C82.UseVisualStyleBackColor = true;
             this.C82.Click += new System.EventHandler(this.button_click7);
             // 
             // C83
             // 
-            this.C83.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C83.Location = new System.Drawing.Point(238, 238);
-            this.C83.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C83, "C83");
             this.C83.Name = "C83";
-            this.C83.Size = new System.Drawing.Size(112, 113);
-            this.C83.TabIndex = 7;
             this.C83.UseVisualStyleBackColor = true;
             this.C83.Click += new System.EventHandler(this.button_click7);
             // 
             // C81
             // 
-            this.C81.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C81.Location = new System.Drawing.Point(0, 238);
-            this.C81.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C81, "C81");
             this.C81.Name = "C81";
-            this.C81.Size = new System.Drawing.Size(112, 113);
-            this.C81.TabIndex = 6;
             this.C81.UseVisualStyleBackColor = true;
             this.C81.Click += new System.EventHandler(this.button_click7);
             // 
             // B83
             // 
-            this.B83.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B83.Location = new System.Drawing.Point(238, 119);
-            this.B83.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B83, "B83");
             this.B83.Name = "B83";
-            this.B83.Size = new System.Drawing.Size(112, 113);
-            this.B83.TabIndex = 5;
             this.B83.UseVisualStyleBackColor = true;
             this.B83.Click += new System.EventHandler(this.button_click7);
             // 
             // B82
             // 
-            this.B82.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B82.Location = new System.Drawing.Point(120, 119);
-            this.B82.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B82, "B82");
             this.B82.Name = "B82";
-            this.B82.Size = new System.Drawing.Size(112, 113);
-            this.B82.TabIndex = 4;
             this.B82.UseVisualStyleBackColor = true;
             this.B82.Click += new System.EventHandler(this.button_click7);
             // 
             // B81
             // 
-            this.B81.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B81.Location = new System.Drawing.Point(0, 119);
-            this.B81.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B81, "B81");
             this.B81.Name = "B81";
-            this.B81.Size = new System.Drawing.Size(112, 113);
-            this.B81.TabIndex = 3;
             this.B81.UseVisualStyleBackColor = true;
             this.B81.Click += new System.EventHandler(this.button_click7);
             // 
             // A83
             // 
-            this.A83.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A83.Location = new System.Drawing.Point(238, 0);
-            this.A83.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A83, "A83");
             this.A83.Name = "A83";
-            this.A83.Size = new System.Drawing.Size(112, 113);
-            this.A83.TabIndex = 2;
             this.A83.UseVisualStyleBackColor = true;
             this.A83.Click += new System.EventHandler(this.button_click7);
             // 
             // A82
             // 
-            this.A82.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A82.Location = new System.Drawing.Point(120, 0);
-            this.A82.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A82, "A82");
             this.A82.Name = "A82";
-            this.A82.Size = new System.Drawing.Size(112, 113);
-            this.A82.TabIndex = 1;
             this.A82.UseVisualStyleBackColor = true;
             this.A82.Click += new System.EventHandler(this.button_click7);
             // 
             // A81
             // 
-            this.A81.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A81.Location = new System.Drawing.Point(0, 0);
-            this.A81.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A81, "A81");
             this.A81.Name = "A81";
-            this.A81.Size = new System.Drawing.Size(112, 113);
-            this.A81.TabIndex = 0;
             this.A81.UseVisualStyleBackColor = true;
             this.A81.Click += new System.EventHandler(this.button_click7);
             // 
@@ -1145,108 +817,69 @@ namespace TicTacToe
             this.panel9.Controls.Add(this.A93);
             this.panel9.Controls.Add(this.A92);
             this.panel9.Controls.Add(this.A91);
-            this.panel9.Location = new System.Drawing.Point(728, 729);
-            this.panel9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.panel9, "panel9");
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(356, 356);
-            this.panel9.TabIndex = 14;
             // 
             // C92
             // 
-            this.C92.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C92.Location = new System.Drawing.Point(120, 238);
-            this.C92.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C92, "C92");
             this.C92.Name = "C92";
-            this.C92.Size = new System.Drawing.Size(112, 113);
-            this.C92.TabIndex = 8;
             this.C92.UseVisualStyleBackColor = true;
             this.C92.Click += new System.EventHandler(this.button_click8);
             // 
             // C93
             // 
-            this.C93.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C93.Location = new System.Drawing.Point(238, 238);
-            this.C93.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C93, "C93");
             this.C93.Name = "C93";
-            this.C93.Size = new System.Drawing.Size(112, 113);
-            this.C93.TabIndex = 7;
             this.C93.UseVisualStyleBackColor = true;
             this.C93.Click += new System.EventHandler(this.button_click8);
             // 
             // C91
             // 
-            this.C91.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.C91.Location = new System.Drawing.Point(0, 238);
-            this.C91.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.C91, "C91");
             this.C91.Name = "C91";
-            this.C91.Size = new System.Drawing.Size(112, 113);
-            this.C91.TabIndex = 6;
             this.C91.UseVisualStyleBackColor = true;
             this.C91.Click += new System.EventHandler(this.button_click8);
             // 
             // B93
             // 
-            this.B93.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B93.Location = new System.Drawing.Point(238, 119);
-            this.B93.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B93, "B93");
             this.B93.Name = "B93";
-            this.B93.Size = new System.Drawing.Size(112, 113);
-            this.B93.TabIndex = 5;
             this.B93.UseVisualStyleBackColor = true;
             this.B93.Click += new System.EventHandler(this.button_click8);
             // 
             // B92
             // 
-            this.B92.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B92.Location = new System.Drawing.Point(120, 119);
-            this.B92.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B92, "B92");
             this.B92.Name = "B92";
-            this.B92.Size = new System.Drawing.Size(112, 113);
-            this.B92.TabIndex = 4;
             this.B92.UseVisualStyleBackColor = true;
             this.B92.Click += new System.EventHandler(this.button_click8);
             // 
             // B91
             // 
-            this.B91.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.B91.Location = new System.Drawing.Point(0, 119);
-            this.B91.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.B91, "B91");
             this.B91.Name = "B91";
-            this.B91.Size = new System.Drawing.Size(112, 113);
-            this.B91.TabIndex = 3;
             this.B91.UseVisualStyleBackColor = true;
             this.B91.Click += new System.EventHandler(this.button_click8);
             // 
             // A93
             // 
-            this.A93.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A93.Location = new System.Drawing.Point(238, 0);
-            this.A93.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A93, "A93");
             this.A93.Name = "A93";
-            this.A93.Size = new System.Drawing.Size(112, 113);
-            this.A93.TabIndex = 2;
             this.A93.UseVisualStyleBackColor = true;
             this.A93.Click += new System.EventHandler(this.button_click8);
             // 
             // A92
             // 
-            this.A92.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A92.Location = new System.Drawing.Point(120, 0);
-            this.A92.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A92, "A92");
             this.A92.Name = "A92";
-            this.A92.Size = new System.Drawing.Size(112, 113);
-            this.A92.TabIndex = 1;
             this.A92.UseVisualStyleBackColor = true;
             this.A92.Click += new System.EventHandler(this.button_click8);
             // 
             // A91
             // 
-            this.A91.Font = new System.Drawing.Font("Arial", 19.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A91.Location = new System.Drawing.Point(0, 0);
-            this.A91.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.A91, "A91");
             this.A91.Name = "A91";
-            this.A91.Size = new System.Drawing.Size(112, 113);
-            this.A91.TabIndex = 0;
             this.A91.UseVisualStyleBackColor = true;
             this.A91.Click += new System.EventHandler(this.button_click8);
             // 
@@ -1262,11 +895,8 @@ namespace TicTacToe
             this.bigpanel.Controls.Add(this.panel7);
             this.bigpanel.Controls.Add(this.panel5);
             this.bigpanel.Controls.Add(this.panel6);
-            this.bigpanel.Location = new System.Drawing.Point(86, 67);
-            this.bigpanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            resources.ApplyResources(this.bigpanel, "bigpanel");
             this.bigpanel.Name = "bigpanel";
-            this.bigpanel.Size = new System.Drawing.Size(1090, 1088);
-            this.bigpanel.TabIndex = 15;
             // 
             // Count
             // 
@@ -1279,118 +909,71 @@ namespace TicTacToe
             this.Count.Controls.Add(this.p2);
             this.Count.Controls.Add(this.p1);
             this.Count.ForeColor = System.Drawing.Color.Brown;
-            this.Count.Location = new System.Drawing.Point(84, 1188);
-            this.Count.Margin = new System.Windows.Forms.Padding(4);
+            resources.ApplyResources(this.Count, "Count");
             this.Count.Name = "Count";
-            this.Count.Size = new System.Drawing.Size(1088, 137);
-            this.Count.TabIndex = 4;
             // 
             // draw_count
             // 
-            this.draw_count.AutoSize = true;
+            resources.ApplyResources(this.draw_count, "draw_count");
             this.draw_count.BackColor = System.Drawing.Color.MistyRose;
-            this.draw_count.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.draw_count.ForeColor = System.Drawing.Color.DarkGreen;
-            this.draw_count.Image = ((System.Drawing.Image)(resources.GetObject("draw_count.Image")));
-            this.draw_count.Location = new System.Drawing.Point(540, 63);
-            this.draw_count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.draw_count.Name = "draw_count";
-            this.draw_count.Size = new System.Drawing.Size(46, 51);
-            this.draw_count.TabIndex = 6;
-            this.draw_count.Text = "0";
             // 
             // o_count
             // 
-            this.o_count.AutoSize = true;
+            resources.ApplyResources(this.o_count, "o_count");
             this.o_count.BackColor = System.Drawing.Color.MistyRose;
-            this.o_count.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.o_count.ForeColor = System.Drawing.Color.DarkGreen;
-            this.o_count.Image = ((System.Drawing.Image)(resources.GetObject("o_count.Image")));
-            this.o_count.Location = new System.Drawing.Point(884, 63);
-            this.o_count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.o_count.Name = "o_count";
-            this.o_count.Size = new System.Drawing.Size(46, 51);
-            this.o_count.TabIndex = 5;
-            this.o_count.Text = "0";
             // 
             // x_count
             // 
-            this.x_count.AutoSize = true;
+            resources.ApplyResources(this.x_count, "x_count");
             this.x_count.BackColor = System.Drawing.Color.MistyRose;
-            this.x_count.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.x_count.ForeColor = System.Drawing.Color.DarkGreen;
-            this.x_count.Image = ((System.Drawing.Image)(resources.GetObject("x_count.Image")));
-            this.x_count.Location = new System.Drawing.Point(158, 63);
-            this.x_count.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.x_count.Name = "x_count";
-            this.x_count.Size = new System.Drawing.Size(46, 51);
-            this.x_count.TabIndex = 4;
-            this.x_count.Text = "0";
             // 
             // draw
             // 
-            this.draw.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.draw, "draw");
             this.draw.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.draw.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.draw.ForeColor = System.Drawing.Color.Maroon;
-            this.draw.Location = new System.Drawing.Point(368, 4);
-            this.draw.Margin = new System.Windows.Forms.Padding(4);
             this.draw.Name = "draw";
-            this.draw.Size = new System.Drawing.Size(380, 46);
-            this.draw.TabIndex = 3;
-            this.draw.Text = "Draw";
-            this.draw.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // p2
             // 
-            this.p2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.p2, "p2");
             this.p2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.p2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.p2.ForeColor = System.Drawing.Color.Maroon;
-            this.p2.Location = new System.Drawing.Point(722, 4);
-            this.p2.Margin = new System.Windows.Forms.Padding(4);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(366, 46);
-            this.p2.TabIndex = 2;
-            this.p2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // p1
             // 
-            this.p1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            resources.ApplyResources(this.p1, "p1");
             this.p1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.p1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.p1.ForeColor = System.Drawing.Color.Maroon;
-            this.p1.Location = new System.Drawing.Point(0, 4);
-            this.p1.Margin = new System.Windows.Forms.Padding(4);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(380, 46);
-            this.p1.TabIndex = 1;
-            this.p1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // again
             // 
-            this.again.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.again.Location = new System.Drawing.Point(528, 1361);
+            resources.ApplyResources(this.again, "again");
             this.again.Name = "again";
-            this.again.Size = new System.Drawing.Size(234, 54);
-            this.again.TabIndex = 16;
-            this.again.Text = "Play again";
             this.again.UseVisualStyleBackColor = true;
             this.again.Click += new System.EventHandler(this.again_Click);
             // 
             // Ultimate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(1268, 1437);
             this.Controls.Add(this.again);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.Count);
             this.Controls.Add(this.bigpanel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Ultimate";
-            this.Text = "Super";
+            this.ShowIcon = false;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -1414,7 +997,6 @@ namespace TicTacToe
 
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem resetWinGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newGameToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
