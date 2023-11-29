@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace TicTacToe
 {
-    public partial class Basic_Computer : Form
+    public partial class Basic_Computer : Form, TicTacToeGame
     {
         // Lay ben tictacToeGame
         // Reference to the TicTacToeGame class
@@ -42,7 +42,7 @@ namespace TicTacToe
             p2.Text = ticTacToeGame.Player2.Name;
 
             // Kiểm tra nếu tên người chơi 2 là "COMPUTER" thì thiết lập chế độ chơi với máy
-            if (playerName2.ToUpper() == "COMPUTER")
+            if (playerName2.ToUpper() == "Computer")
             {
                 computer.AgainstComputer = true;
             }
@@ -157,7 +157,7 @@ namespace TicTacToe
         private void setPlayerDefaultToolStripMenuItem_Click(object sender, EventArgs e)
         {
             p1.Text = "Player";
-            p2.Text = "COMPUTER";
+            p2.Text = "Computer";
             ticTacToeGame = new TicTacToeGame(p1.Text, p2.Text);
             o_count.Text = "0";
             x_count.Text = "0";
@@ -170,10 +170,10 @@ namespace TicTacToe
 
         private void p2_TextChanged(object sender, EventArgs e)
         {
-            if (p2.Text.ToUpper() == "COMPUTER")
+            if (p2.Text == "Computer")
             {
                 computer.AgainstComputer = true;
-                ticTacToeGame.Player2.Name = "COMPUTER"; // Đặt tên người chơi 2 là "COMPUTER"
+                ticTacToeGame.Player2.Name = "Computer"; // Đặt tên người chơi 2 là "COMPUTER"
             }
             else
             {

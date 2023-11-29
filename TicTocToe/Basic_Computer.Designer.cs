@@ -310,8 +310,8 @@ namespace TicTacToe
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.resetWinGameToolStripMenuItem,
-            this.exitToolStripMenuItem,
-            this.setPlayerDefaultToolStripMenuItem});
+            this.setPlayerDefaultToolStripMenuItem,
+            this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(72, 36);
             this.fileToolStripMenuItem.Text = "File";
@@ -319,21 +319,21 @@ namespace TicTacToe
             // resetWinGameToolStripMenuItem
             // 
             this.resetWinGameToolStripMenuItem.Name = "resetWinGameToolStripMenuItem";
-            this.resetWinGameToolStripMenuItem.Size = new System.Drawing.Size(339, 44);
+            this.resetWinGameToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.resetWinGameToolStripMenuItem.Text = "New game";
             this.resetWinGameToolStripMenuItem.Click += new System.EventHandler(this.resetWinGameToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(339, 44);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // setPlayerDefaultToolStripMenuItem
             // 
             this.setPlayerDefaultToolStripMenuItem.Name = "setPlayerDefaultToolStripMenuItem";
-            this.setPlayerDefaultToolStripMenuItem.Size = new System.Drawing.Size(339, 44);
+            this.setPlayerDefaultToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.setPlayerDefaultToolStripMenuItem.Text = "Set Player Default";
             this.setPlayerDefaultToolStripMenuItem.Click += new System.EventHandler(this.setPlayerDefaultToolStripMenuItem_Click);
             // 
@@ -348,7 +348,7 @@ namespace TicTacToe
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(214, 44);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(359, 44);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 

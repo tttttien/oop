@@ -41,8 +41,8 @@ namespace TicTacToe
             Console.WriteLine("Looking for win or block: " + mark);
             for (int i = 0; i < 3; i++)
             {
-                if (buttons[i, 0].Text == buttons[i, 1].Text && buttons[i, 1].Text == buttons[i, 2].Text && !buttons[i, 0].Enabled)
-                {
+                
+                {if ((buttons[i, 0].Text == buttons[i, 1].Text && buttons[i, 1].Text == buttons[i, 2].Text) && !buttons[i, 0].Enabled)
                     return buttons[i, 0];
                 }
 

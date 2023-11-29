@@ -8,12 +8,12 @@ using System.Windows.Forms;
 
 namespace TicTacToe
 {
-    class UltimateState
+    class UltimateState : TicTacToeGame
     {
         private TicTacToeGame ticTacToeGame;
         private Ultimate ultimate;
         private Button[,] button;
-        public UltimateState(TicTacToeGame game, Ultimate ultimateInstance, Button[,] button)
+        public UltimateState(TicTacToeGame game, Ultimate ultimateInstance, string playerName1, string playerName2, Button[,] button) : base (playerName1, playerName2)
         {
             ticTacToeGame = game;
             ultimate = ultimateInstance;
@@ -72,7 +72,7 @@ namespace TicTacToe
                 for (int j = 0; j < 3; j++)
                 {
                     Panel currentPanel = panels[i, j];
-                    int currentPanelIndex = (i * 3) + (j + 1);
+                    int currentPanelIndex = (i * 3) + (j + 1);  // 
 
                     foreach (Control control in currentPanel.Controls)
                     {
@@ -128,14 +128,14 @@ namespace TicTacToe
         public void CheckWinner(Button clickedButton, Button[,] buttons, Panel panel, Panel[,] panels)
         {
             Console.WriteLine("CheckForWinnerPanel returned true");
-            if (ticTacToeGame.MakeMove(clickedButton))
+            if (MakeMove(clickedButton)) 
             {
-                if (ticTacToeGame.CheckForWinner(buttons))
+                if (CheckForWinner(buttons))
                 {
                     // Disable buttons and display the winner
-                    ticTacToeGame.DisableButton(buttons);
-                    Player winner = ticTacToeGame.GetWinner();
-                    if (winner.Name == ticTacToeGame.Player1.Name)
+                    DisableButton(buttons);
+                    Player winner = GetWinner();
+                    if (winner.Name == Player1.Name)
                     {
                         Button newButton = new Button();
 
@@ -143,7 +143,7 @@ namespace TicTacToe
                         newButton.Size = panel.Size;
 
                         // Đặt vị trí cho button mới theo vị trí của panel
-                        newButton.Location = new Point(0, 0);
+                        newButton.Location = new Point(0, 0);  
 
                         // Đặt văn bản cho button mới là "X"-
                         newButton.Text = "X";
@@ -155,15 +155,16 @@ namespace TicTacToe
                         newButton.Name = panel.Name;
 
                         // Thêm button mới vào form hoặc container tương ứng
-                        panel.Controls.Add(newButton);
+                        panel.Controls.Add(newButton); 
                         panel.Controls[newButton.Name].BringToFront();
+                        // An nut big do
                         for (int i = 0; i < 3; i++)
                         {
                             for (int j = 0; j < 3; j++)
                             {
                                 if (newButton.Name == panels[i, j].Name)
                                 {
-                                    button[i, j] = newButton;
+                                    button[i, j] = newButton; // Set mang vao button
                                     button[i, j].Enabled = false;
                                     break;
                                 }
@@ -171,7 +172,7 @@ namespace TicTacToe
                         }
                     }
 
-                    if (winner.Name == ticTacToeGame.Player2.Name)
+                    if (winner.Name == Player2.Name)
                     {
                         Button newButton = new Button();
 
@@ -206,7 +207,7 @@ namespace TicTacToe
                         }
 
                     };
-                    if (ticTacToeGame.CheckForWinner(button))
+                    if (CheckForWinner(button))
                     {
                         DisableButtonWhenWin(panels);
                         ultimate.ScoreWinner(winner);
@@ -219,7 +220,7 @@ namespace TicTacToe
         public void ResetGame(Panel[,] panels, Button[,] buttons)
         {
 
-            ticTacToeGame.Turn = true;
+            Turn = true;
             //  turnCount = 0;
             foreach (Panel panel in panels)
             {

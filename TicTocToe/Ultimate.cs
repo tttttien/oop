@@ -107,7 +107,7 @@ namespace TicTacToe
             // Set player names on the form
             p1.Text = ticTacToeGame.Player1.Name;
             p2.Text = ticTacToeGame.Player2.Name;
-            ultimatestate = new UltimateState(ticTacToeGame, this, button);
+            ultimatestate = new UltimateState(ticTacToeGame, this, playerName1, playerName2, button);
         }
         //  Khi ma di -> Khi cos nguoiw thang -> Disable het button -> Ai thang, thif tinh ra score -> Xong gan cho x_count de hien thi ra man hinh
         // Handle click event for game buttons
