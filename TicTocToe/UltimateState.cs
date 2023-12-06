@@ -18,6 +18,7 @@ namespace TicTacToe
             ticTacToeGame = game;
             ultimate = ultimateInstance;
             this.button = button;
+            Turn = true;
         }
         public void Jump(Button clickedButton, Button[,] buttons, Panel[,] panels)
         {
@@ -166,6 +167,7 @@ namespace TicTacToe
                                 {
                                     button[i, j] = newButton; // Set mang vao button
                                     button[i, j].Enabled = false;
+                                    turnCountForUltimate++;
                                     break;
                                 }
                             }
@@ -201,12 +203,18 @@ namespace TicTacToe
                                 {
                                     button[i, j] = newButton;
                                     button[i, j].Enabled = false;
+                                    turnCountForUltimate++;
                                     break;
                                 }
                             }
                         }
 
-                    };
+                    }
+                    if (turnCountForUltimate == 9)
+                    {
+                        ultimate.isDraw();
+                        return;
+                    }
                     if (CheckForWinner(button))
                     {
                         DisableButtonWhenWin(panels);
@@ -238,6 +246,8 @@ namespace TicTacToe
                 if (button != null)
                 {
                     button.Dispose();
+                    // Rename because it will still name of panel
+                    button.Name = "";
                 }
             }
         }

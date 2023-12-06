@@ -33,7 +33,11 @@ namespace TicTacToe
                     }
                 }
             }
-            move.PerformClick();
+            if (move != null)
+            {
+                move.PerformClick();
+            }
+           
         }
 
         private Button LookForWinOrBlock(string mark, Button[,] buttons)
@@ -41,24 +45,60 @@ namespace TicTacToe
             Console.WriteLine("Looking for win or block: " + mark);
             for (int i = 0; i < 3; i++)
             {
-                
-                {if ((buttons[i, 0].Text == buttons[i, 1].Text && buttons[i, 1].Text == buttons[i, 2].Text) && !buttons[i, 0].Enabled)
+                // HORIZONTAL
+                if (buttons[i, 1].Text == buttons[i, 2].Text && buttons[i, 1].Text == mark && buttons[i, 0].Text == "")
+                {
                     return buttons[i, 0];
                 }
-
-                if (buttons[0, i].Text == buttons[1, i].Text && buttons[1, i].Text == buttons[2, i].Text && !buttons[0, i].Enabled)
+                if (buttons[i, 0].Text == buttons[i, 2].Text && buttons[i, 0].Text == mark && buttons[i, 1].Text == "")
+                {
+                    return buttons[i, 1];
+                }
+                if (buttons[i, 0].Text == buttons[i, 1].Text && buttons[i, 1].Text == mark && buttons[i, 2].Text == "")
+                {
+                    return buttons[i, 2];
+                }
+                // VERTICAL
+                if (buttons[1, i].Text == buttons[2, i].Text && buttons[1, i].Text == mark && buttons[0, i].Text == "")
                 {
                     return buttons[0, i];
                 }
+                if (buttons[0, i].Text == buttons[2, i].Text && buttons[0, i].Text == mark && buttons[1, i].Text == "")
+                {
+                    return buttons[1, i];
+                }
+                if (buttons[0, i].Text == buttons[1, i].Text && buttons[0, i].Text == mark && buttons[2, i].Text == "")
+                {
+                    return buttons[2, i];
+                }
             }
-
-            if (buttons[0, 0].Text == buttons[1, 1].Text && buttons[1, 1].Text == buttons[2, 2].Text && !buttons[0, 0].Enabled)
+            // DIAGONAL
+            if (buttons[1, 1].Text == buttons[2, 2].Text && buttons[1, 1].Text == mark && buttons[0, 0].Text == "")
             {
                 return buttons[0, 0];
             }
-            else if (buttons[0, 2].Text == buttons[1, 1].Text && buttons[1, 1].Text == buttons[2, 0].Text && !buttons[0, 2].Enabled)
+            if (buttons[0, 0].Text == buttons[2, 2].Text && buttons[0, 0].Text == mark && buttons[1, 1].Text == "")
+            {
+                return buttons[1, 1];
+            }
+            if (buttons[0, 0].Text == buttons[1, 1].Text && buttons[1, 1].Text == mark && buttons[2, 2].Text == "")
+            {
+                return buttons[2, 0];
+            }
+
+            if (buttons[1, 1].Text == buttons[2, 0].Text && buttons[1, 1].Text == mark && buttons[0, 2].Text == "")
             {
                 return buttons[0, 2];
+            }
+
+            if (buttons[0, 2].Text == buttons[2, 0].Text && buttons[0, 2].Text == mark && buttons[1, 1].Text == "")
+            {
+                return buttons[0, 2];
+            }
+
+            if (buttons[0, 2].Text == buttons[1, 1].Text && buttons[1, 1].Text ==  mark && buttons [2,0].Text == "")
+            {
+                return buttons[2, 0];
             }
             return null;
         }

@@ -129,7 +129,12 @@ namespace TicTacToe
             MessageBox.Show($"Congratulations! {winner.Name} is the winner", "Winner");
         }
 
+        public void isDraw ()
+        {
+            draw_count.Text = (Int32.Parse(draw_count.Text) + 1).ToString();
+            MessageBox.Show("Draw", "Draw");
 
+        }
 
 
         private void button_click(object sender, EventArgs e)
@@ -197,13 +202,14 @@ namespace TicTacToe
             if (b.Enabled)
             {
                 // Display X or O when mouse enters a button based on the current player's turn
-                if (ticTacToeGame.Turn)
+                if (ultimatestate.Turn)
                 {
                     b.Text = "X";
                 }
                 else
                 {
                     b.Text = "O";
+
                 }
             }
         }
@@ -264,10 +270,6 @@ namespace TicTacToe
             ticTacToeGame.Player2.Score = 0;
             ultimatestate.ResetGame(panels, button);
         }
-
-
-
-
 
 
 
