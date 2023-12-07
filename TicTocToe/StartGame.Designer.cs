@@ -49,7 +49,7 @@ namespace TicTacToe
             this.flowLayoutPanel1.BackgroundImage = global::TicTocToe.Properties.Resources.background;
             this.flowLayoutPanel1.Controls.Add(this.button2);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(536, 371);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(142, 73);
             this.flowLayoutPanel1.TabIndex = 1;
@@ -62,7 +62,7 @@ namespace TicTacToe
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Maroon;
             this.button2.Location = new System.Drawing.Point(2, 2);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(140, 52);
             this.button2.TabIndex = 3;
@@ -79,9 +79,9 @@ namespace TicTacToe
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Maroon;
             this.button1.Location = new System.Drawing.Point(4, 4);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Padding = new System.Windows.Forms.Padding(2);
             this.button1.Size = new System.Drawing.Size(140, 54);
             this.button1.TabIndex = 0;
             this.button1.Text = "Basic";
@@ -94,7 +94,7 @@ namespace TicTacToe
             this.flowLayoutPanel2.BackgroundImage = global::TicTocToe.Properties.Resources.background;
             this.flowLayoutPanel2.Controls.Add(this.button1);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(268, 369);
-            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
             this.flowLayoutPanel2.Size = new System.Drawing.Size(146, 77);
             this.flowLayoutPanel2.TabIndex = 2;
@@ -108,9 +108,9 @@ namespace TicTacToe
             this.label1.Location = new System.Drawing.Point(4, 38);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 46);
+            this.label1.Size = new System.Drawing.Size(241, 46);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Player 1:";
+            this.label1.Text = "Player 1 (X):";
             // 
             // label2
             // 
@@ -121,9 +121,9 @@ namespace TicTacToe
             this.label2.Location = new System.Drawing.Point(4, 119);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 46);
+            this.label2.Size = new System.Drawing.Size(245, 46);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Player 2:";
+            this.label2.Text = "Player 2 (O):";
             // 
             // p1
             // 
@@ -131,10 +131,10 @@ namespace TicTacToe
             this.p1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
             this.p1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.p1.Location = new System.Drawing.Point(208, 35);
-            this.p1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.p1.Location = new System.Drawing.Point(242, 35);
+            this.p1.Margin = new System.Windows.Forms.Padding(4);
             this.p1.Name = "p1";
-            this.p1.Size = new System.Drawing.Size(474, 53);
+            this.p1.Size = new System.Drawing.Size(440, 53);
             this.p1.TabIndex = 2;
             // 
             // p2
@@ -142,10 +142,10 @@ namespace TicTacToe
             this.p2.BackColor = System.Drawing.Color.Snow;
             this.p2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.p2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.p2.Location = new System.Drawing.Point(208, 115);
-            this.p2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.p2.Location = new System.Drawing.Point(242, 115);
+            this.p2.Margin = new System.Windows.Forms.Padding(4);
             this.p2.Name = "p2";
-            this.p2.Size = new System.Drawing.Size(474, 53);
+            this.p2.Size = new System.Drawing.Size(440, 53);
             this.p2.TabIndex = 3;
             // 
             // panel1
@@ -156,7 +156,7 @@ namespace TicTacToe
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(124, 144);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(704, 196);
             this.panel1.TabIndex = 0;
@@ -170,7 +170,7 @@ namespace TicTacToe
             this.Controls.Add(this.flowLayoutPanel2);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StartGame";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
