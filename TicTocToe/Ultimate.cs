@@ -115,14 +115,13 @@ namespace TicTacToe
 
         public void ScoreWinner(Player winner)
         {
-            winner = ticTacToeGame.GetWinner();
             winner.Score++;
             // Update score on the form based on the winner
-            if (winner == ticTacToeGame.Player1)
+            if (winner.Name == p1.Text)
             {
                 x_count.Text = winner.Score.ToString();
             }
-            else if (winner == ticTacToeGame.Player2)
+            else if (winner.Name == p2.Text)
             {
                 o_count.Text = winner.Score.ToString();
             }

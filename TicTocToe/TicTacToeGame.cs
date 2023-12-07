@@ -12,9 +12,9 @@ namespace TicTacToe
         public Player Player1 { get { return player1; } }
         public Player Player2 { get { return player2; } }
 
-        public bool turn; // true: X turn; false: O turn // Luot choi
+        public bool turn; // true: X turn; false: O turn
         public bool Turn { get { return turn; } set { turn = value; } }
-        private int turnCount; // Counts the number of turns // Hoa hay khong
+        private int turnCount; // Counts the number of turns -> Know draw or not
         public int turnCountForUltimate;
         
         // Constructor
